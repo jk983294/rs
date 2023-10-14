@@ -18,7 +18,6 @@ SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS)
 # Source code
 include_directories(SYSTEM /opt/3rd/common/include)
 include_directories(SYSTEM /opt/3rd/interface/ctp/include)
-include_directories(SYSTEM third/printemps)
 include_directories(/opt/version/latest/zergbase/include)
 include_directories(/opt/version/latest/zergtool/include)
 include_directories(SYSTEM /opt/version/latest/frenzy/include)

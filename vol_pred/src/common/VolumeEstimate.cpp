@@ -1,5 +1,5 @@
 #include "VolumeEstimate.hpp"
-#include <printemps.h>
+#include <printemps/printemps.h>
 #include <cstdlib>
 #include <iostream>
 
