@@ -1,0 +1,10 @@
+file(GLOB CommonSrc *.cpp)
+add_library(feval SHARED ${CommonSrc})
+target_link_libraries( feval arrow arrow_dataset fst liblz4 libzstd pthread )
+set_property(TARGET feval PROPERTY POSITION_INDEPENDENT_CODE ON)
+install(TARGETS feval LIBRARY DESTINATION lib)
+
+add_library(feval_static STATIC ${CommonSrc})
+target_link_libraries( feval_static arrow arrow_dataset fst liblz4 libzstd pthread )
+set_property(TARGET feval_static PROPERTY POSITION_INDEPENDENT_CODE ON)
+install(TARGETS feval_static LIBRARY DESTINATION lib)
